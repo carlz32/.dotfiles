@@ -29,6 +29,10 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 alias zshconfig="nvim ~/.zshrc"
 alias ap="alias | fzf"
+alias dug="du -h / 2>/dev/null | grep '[0-9\.]\+G'"
+alias tldrf="tldr --list | fzf --preview 'tldr {1} --color=always' --preview-window=right:70% | xargs tldr"
+alias vi="nvim"
+alias psp="ps x | fzf"
 
 
 # exa
@@ -51,12 +55,6 @@ alias lint="nr lint"
 alias lintf="nr lint --fix"
 
 
-# vscode profile
-alias dug="du -h / 2>/dev/null | grep '[0-9\.]\+G'"
-alias tldrf="tldr --list | fzf --preview 'tldr {1} --color=always' --preview-window=right:70% | xargs tldr"
-alias vi="nvim"
-
-
 # oh my posh
 eval "$(oh-my-posh init zsh --config /mnt/c/Users/KaelZhu/OneDrive/Documents/Backups/catppuccin.omp.json)"
 
@@ -67,10 +65,6 @@ eval "$(zoxide init --cmd cd zsh)"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-
-# fzf
-alias psp="ps x | fzf"
 
 
 function killp() {
@@ -124,64 +118,17 @@ function c() {
 }
 
 
-# ignore duplicates from history
-# function fzf-select-history() {
-#    local tac
-#    if which tac > /dev/null; then
-#    	tac="tac"
-#    else
-#    	tac="tail -r"
-#    fi
-#    BUFFER=$(history -n 1 | eval $tac | awk '!a[$0]++' | fzf)
-#    CURSOR=$#BUFFER
-# }
-
-
-# zle -N fzf-select-history
-# bindkey '^r' fzf-select-history
-
-
 function take() {
   mkdir $1 && cd $1
 }
 
-
-function cx() {
-  cd $1 && ll
+# auto ll after cd into a directory
+autoload -U add-zsh-hook
+add-zsh-hook -Uz chpwd () {
+    if [[ $PWD != $HOME ]]; then
+        la
+    fi
 }
-
-# zellij work with peco to attach sessions
-function new-session() {
-  read NAME\?"New session name: "
-  if [[ -z $NAME ]] then
-    echo "[Info]: set session name to default"
-    zellij attach -c "default"
-  else
-    zellij attach -c "${NAME}"
-  fi
-}
-
-
-# function be() {
-#   ZJ_SESSIONS=$(zellij list-sessions -s)
-#   NO_SESSIONS=$(echo "${ZJ_SESSIONS}" | wc -l)
-# 
-#   if [ "{$ZELLIJ}" ] && [ -z "${ZELLIJ_SESSION_NAME}" ]; then
-#     if [ "${NO_SESSIONS}" -ge 1 ]; then
-#       local P=$(echo "${ZJ_SESSIONS}" | fzf --height 40%)
-#       if [[ -z $P ]] then
-#         echo "[Info]: no session selected!"
-#         new-session
-#       else
-#         zellij attach $P
-#       fi
-#     else
-#       new-session
-#     fi
-#   else
-#     echo "[Info]: already in session!"
-#   fi
-# }
 
 
 function ya() {
