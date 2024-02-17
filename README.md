@@ -3,6 +3,9 @@
 ### Requirements
 
 - zsh, ohmyzsh
-- exa
+- eza
 - zoxide
 - oh-my-posh
+- asdf
+- tmux
+- neovim

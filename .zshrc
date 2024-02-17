@@ -20,6 +20,7 @@ plugins=(
 	docker
 	gh
 	rust
+    asdf
 )
 
 
@@ -36,7 +37,7 @@ alias psp="ps x | fzf"
 
 
 # exa
-alias ll="exa --long --icons"
+alias ll="eza --long --icons"
 alias la="ll -a --no-user --no-time"
 alias lt="la --tree --level=2"
 
