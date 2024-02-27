@@ -1,3 +1,5 @@
+# brew
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -17,10 +19,8 @@ plugins=(
 	zsh-autosuggestions
 	zsh-syntax-highlighting
 	fzf
-	docker
 	gh
 	rust
-    asdf
 )
 
 
@@ -149,14 +149,14 @@ export PATH="$PNPM_HOME:$PATH"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/kaelz/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/home/carl/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/home/kaelz/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/kaelz/miniconda3/etc/profile.d/conda.sh"
+    if [ -f "/home/carl/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/carl/miniconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/home/kaelz/miniconda3/bin:$PATH"
+        export PATH="/home/carl/miniconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
@@ -172,4 +172,11 @@ test -r /home/kaelz/.opam/opam-init/init.zsh && . /home/kaelz/.opam/opam-init/in
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+# fnm
+export PATH="/home/carl/.local/share/fnm:$PATH"
+eval "`fnm env`"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
