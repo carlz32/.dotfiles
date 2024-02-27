@@ -30,7 +30,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 alias zshconfig="nvim ~/.zshrc"
 alias ap="alias | fzf"
-alias dug="du -h / 2>/dev/null | grep '[0-9\.]\+G'"
 alias tldrf="tldr --list | fzf --preview 'tldr {1} --color=always' --preview-window=right:70% | xargs tldr"
 alias vi="nvim"
 alias psp="ps x | fzf"
@@ -172,3 +171,5 @@ test -r /home/kaelz/.opam/opam-init/init.zsh && . /home/kaelz/.opam/opam-init/in
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
