@@ -14,6 +14,8 @@
 
 ```bash
 git clone https://github.com/Carl-ZLJ/dotfiles ~/<your-folder-name>
+git submodule init
+git submodule update
 cd ~/<your-folder-name>
 stow .
 ```
