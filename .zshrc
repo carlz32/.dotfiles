@@ -30,7 +30,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 alias zshconfig="nvim ~/.zshrc"
 alias ap="alias | fzf"
-alias tldrf="tldr --list | fzf --preview 'tldr {1} --color=always' --preview-window=right:70% | xargs tldr"
+alias tldrf="tldr --list | fzf --preview 'tldr {1}' --preview-window=right:70% | xargs tldr"
 alias vi="nvim"
 alias psp="ps x | fzf"
 

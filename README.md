@@ -13,9 +13,7 @@
 ### Steps
 
 ```bash
-git clone https://github.com/Carl-ZLJ/dotfiles ~/<your-folder-name>
-git submodule init
-git submodule update
+git clone --recurse-submodules https://github.com/Carl-ZLJ/dotfiles ~/<your-folder-name>
 cd ~/<your-folder-name>
 stow .
 ```
