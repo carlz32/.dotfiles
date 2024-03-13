@@ -21,3 +21,5 @@
 	repo = /home/kaelz/learn/draw-guess
 [fetch]
 	writeCommitGraph = true
+[init]
+	defaultBranch = main

@@ -3,8 +3,8 @@
 ### Requirements
 
 - zsh 
-  - [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)
-- [asdf](https://github.com/asdf-vm/asdf)
+- [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)
+- [brew](https://brew.sh/)
 - [tmux](https://github.com/tmux/tmux)
 - [neovim](https://github.com/neovim/neovim)
 - [stow](https://github.com/aspiers/stow)

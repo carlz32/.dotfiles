@@ -7,6 +7,7 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 export SUDO_EDITOR="nvim"
+# export DISPLAY=127.0.0.1:0
 
 
 # python
@@ -33,6 +34,7 @@ alias ap="alias | fzf"
 alias tldrf="tldr --list | fzf --preview 'tldr {1}' --preview-window=right:70% | xargs tldr"
 alias vi="nvim"
 alias psp="ps x | fzf"
+alias emacs="emacsclient -c -n -a 'emacs'"
 
 
 # exa
@@ -60,12 +62,6 @@ eval "$(oh-my-posh init zsh --config /mnt/c/Users/KaelZhu/OneDrive/Documents/Bac
 
 # zoxide
 eval "$(zoxide init --cmd cd zsh)"
-
-# node version manager 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
 
 function killp() {
 	if [[ `uname` == "Linux" ]]; then
@@ -140,6 +136,17 @@ function ya() {
 	rm -f -- "$tmp"
 }
 
+function vterm_printf() {
+    if [ -n "$TMUX" ] && ([ "${TERM%%-*}" = "tmux" ] || [ "${TERM%%-*}" = "screen" ]); then
+        # Tell tmux to pass the escape sequences through
+        printf "\ePtmux;\e\e]%s\007\e\\" "$1"
+    elif [ "${TERM%%-*}" = "screen" ]; then
+        # GNU screen (screen, screen-256color, screen-256color-bce)
+        printf "\eP\e]%s\007\e\\" "$1"
+    else
+        printf "\e]%s\e\\" "$1"
+    fi
+}
 
 # pnpm
 export PNPM_HOME="/home/kaelz/.local/share/pnpm"
