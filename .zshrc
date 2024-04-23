@@ -1,5 +1,5 @@
 # brew
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+# eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -163,10 +163,6 @@ test -r /home/kaelz/.opam/opam-init/init.zsh && . /home/kaelz/.opam/opam-init/in
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-
-# fnm
-export PATH="/home/carl/.local/share/fnm:$PATH"
-eval "`fnm env`"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
