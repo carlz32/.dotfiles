@@ -8,6 +8,7 @@
 - [tmux](https://github.com/tmux/tmux)
 - [neovim](https://github.com/neovim/neovim)
 - [stow](https://github.com/aspiers/stow)
+- visual studio code
 
 
 ### Steps

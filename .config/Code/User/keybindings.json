@@ -1,0 +1,131 @@
+[
+	// Remove
+	{
+		"key": "ctrl+q",
+		"command": "-workbench.action."
+	},
+	{
+		"key": "ctrl+j",
+		"command": "-workbench.action.togglePanel"
+	},
+	{
+		"key": "ctrl+n",
+		"command": "-workbench.action.files.newUntitledFile"
+	},
+	// File Explorer
+	{
+		"key": "a",
+		"command": "explorer.newFile",
+		"when": "filesExplorerFocus"
+	},
+	{
+		"key": "shift+a",
+		"command": "explorer.newFolder",
+		"when": "filesExplorerFocus"
+	},
+	{
+		"key": "r",
+		"command": "renameFile",
+		"when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+	},
+	{
+		"key": "z",
+		"command": "workbench.files.action.collapseExplorerFolders",
+		"when": "filesExplorerFocus"
+	},
+	{
+		"key": "s",
+		"command": "explorer.openToSide",
+		"when": "filesExplorerFocus"
+	},
+	{
+		"key": "m",
+		"command": "fileutils.moveFile",
+		"when": "filesExplorerFocus"
+	},
+	{
+		"key": "c",
+		"command": "fileutils.duplicateFile",
+		"when": "filesExplorerFocus"
+	},
+	{
+		"key": "d",
+		"command": "moveFileToTrash",
+		"when": "explorerResourceMoveableToTrash && filesExplorerFocus && foldersViewVisible && !explorerResourceReadonly && !inputFocus"
+	},
+	// Select
+	{
+		"key": "ctrl+j",
+		"command": "selectNextCodeAction",
+		"when": "codeActionMenuVisible"
+	},
+	{
+		"key": "ctrl+j",
+		"command": "selectNextSuggestion",
+		"when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+	},
+	{
+		"key": "ctrl+j",
+		"command": "workbench.action.quickOpenSelectNext",
+		"when": "inQuickOpen"
+	},
+	{
+		"key": "ctrl+j",
+		"command": "workbench.action.nextPanelView",
+		"when": "panelFocus"
+	},
+	{
+		"key": "ctrl+k",
+		"command": "selectPrevSuggestion",
+		"when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+	},
+	{
+		"key": "ctrl+k",
+		"command": "selectPrevCodeAction",
+		"when": "codeActionMenuVisible"
+	},
+	{
+		"key": "ctrl+k",
+		"command": "workbench.action.quickOpenSelectPrevious",
+		"when": "inQuickOpen"
+	},
+	{
+		"key": "ctrl+k",
+		"command": "workbench.action.previousPanelView",
+		"when": "panelFocus"
+	},
+	// Navigate between panels
+	{
+		"key": "ctrl+q",
+		"command": "workbench.action.quickOpenView"
+	},
+	{
+		"key": "ctrl+q",
+		"command": "workbench.action.quickOpenNavigateNextInViewPicker",
+		"when": "inQuickOpen"
+	},
+	{
+		"key": "ctrl+f",
+		"command": "workbench.action.focusFirstEditorGroup",
+		"when": "sideBarFocus || auxiliaryBarFocus || panelFocus"
+	},
+	{
+		"key": "ctrl+f",
+		"command": "workbench.action.nextEditor",
+		"when": "!sideBarFocus && !auxiliaryBarFocus && !panelFocus"
+	},
+	{
+		"key": "ctrl+b",
+		"command": "workbench.action.focusFirstEditorGroup",
+		"when": "sideBarFocus || auxiliaryBarFocus || panelFocus"
+	},
+	{
+		"key": "ctrl+b",
+		"command": "workbench.action.previousEditor",
+		"when": "!sideBarFocus && !auxiliaryBarFocus && !panelFocus"
+	},
+	{
+		"key": "ctrl+t",
+		"command": "workbench.action.togglePanel",
+	},
+]
