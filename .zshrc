@@ -26,15 +26,16 @@ ZSH_THEME="robbyrussell"
 source $ZSH/oh-my-zsh.sh
 
 
-# Example aliases
+# Aliases
 alias zshconfig="nvim ~/.zshrc"
 alias ap="alias | fzf"
 alias tldrf="tldr --list | fzf --preview 'tldr {1}' --preview-window=right:70% | xargs tldr"
 alias vi="nvim"
 alias psp="ps x | fzf"
 alias rate="rate-mirrors arch | sudo tee /etc/pacman.d/mirrorlist"
+alias hp="history | fzf"
 
-# exa
+# eza
 alias ll="eza --long --icons"
 alias la="ll -a --no-user --no-time"
 alias lt="la --tree --level=2"
