@@ -661,9 +661,10 @@
     "source.fixAll": "never",
     "source.organizeImports": "explicit"
   },
+  "biome.lspBin": "/usr/bin/biome",
   "[javascript]": {
     "editor.maxTokenizationLineLength": 2500,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "biomejs.biome"
   },
   "[python]": {
     "editor.defaultFormatter": "charliermarsh.ruff",

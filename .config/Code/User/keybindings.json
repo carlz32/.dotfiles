@@ -36,7 +36,7 @@
 	{
 		"key": "s",
 		"command": "explorer.openToSide",
-		"when": "filesExplorerFocus"
+		"when": "filesExplorerFocus && !inputFocus"
 	},
 	{
 		"key": "m",
