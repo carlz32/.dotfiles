@@ -66,7 +66,6 @@
   "editor.multiCursorModifier": "alt",
   "editor.cursorSurroundingLines": 16,
   "editor.cursorBlinking": "solid",
-  "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": true,
   "editor.lineNumbers": "relative",
   "editor.insertSpaces": true,
@@ -122,6 +121,7 @@
   "workbench.tree.indent": 16,
   "workbench.tree.enableStickyScroll": true,
   "workbench.editor.tabActionLocation": "left",
+  "workbench.editor.editorActionsLocation": "titleBar",
   "workbench.startupEditor": "none",
   "workbench.colorTheme": "GitHub Dark Default",
   "workbench.colorCustomizations": {
@@ -142,7 +142,6 @@
   },
   "settingsSync.keybindingsPerPlatform": false,
   // live preview
-  "livePreview.customExternalBrowser": "Chrome",
   "livePreview.openPreviewTarget": "External Browser",
   "livePreview.autoRefreshPreview": "Never",
   "livePreview.previewDebounceDelay": 2000,
@@ -152,7 +151,8 @@
     "error"
   ],
   "errorLens.excludeBySource": [
-    "eslint"
+    "eslint",
+    "biome"
   ],
   // vscodevim
   "vim.easymotion": true,
@@ -682,6 +682,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "biomejs.biome"
   },
 }

@@ -3,10 +3,10 @@
 	email = zljmms32@gmail.com
 [credential "https://github.com"]
 	helper = 
-	helper = !/home/linuxbrew/.linuxbrew/bin/gh auth git-credential
+	helper = !/usr/bin/gh auth git-credential
 [credential "https://gist.github.com"]
 	helper = 
-	helper = !/home/linuxbrew/.linuxbrew/bin/gh auth git-credential
+	helper = !/usr/bin/gh auth git-credential
 [credential]
 	useHttpPath = true
 [core]
@@ -17,8 +17,6 @@
 	ui = auto
 [branch]
 	sort = -committerdate
-[maintenance]
-	repo = /home/kaelz/learn/draw-guess
 [fetch]
 	writeCommitGraph = true
 [init]

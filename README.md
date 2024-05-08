@@ -4,11 +4,10 @@
 
 - zsh 
 - [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)
-- [brew](https://brew.sh/)
 - [tmux](https://github.com/tmux/tmux)
 - [neovim](https://github.com/neovim/neovim)
 - [stow](https://github.com/aspiers/stow)
-- visual studio code
+- Visual Studio Code
     - settings.json
     - keybindings.json
 
