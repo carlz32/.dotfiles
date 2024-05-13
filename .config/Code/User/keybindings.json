@@ -16,12 +16,12 @@
 	{
 		"key": "a",
 		"command": "explorer.newFile",
-		"when": "filesExplorerFocus"
+		"when": "filesExplorerFocus && !inputFocus"
 	},
 	{
 		"key": "shift+a",
 		"command": "explorer.newFolder",
-		"when": "filesExplorerFocus"
+		"when": "filesExplorerFocus && !inputFocus"
 	},
 	{
 		"key": "r",
@@ -31,7 +31,7 @@
 	{
 		"key": "z",
 		"command": "workbench.files.action.collapseExplorerFolders",
-		"when": "filesExplorerFocus"
+		"when": "filesExplorerFocus && !inputFocus"
 	},
 	{
 		"key": "s",
@@ -41,12 +41,12 @@
 	{
 		"key": "m",
 		"command": "fileutils.moveFile",
-		"when": "filesExplorerFocus"
+		"when": "filesExplorerFocus && !inputFocus"
 	},
 	{
 		"key": "c",
 		"command": "fileutils.duplicateFile",
-		"when": "filesExplorerFocus"
+		"when": "filesExplorerFocus && !inputFocus"
 	},
 	{
 		"key": "d",
