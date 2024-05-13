@@ -10,6 +10,7 @@
 - Visual Studio Code
     - settings.json
     - keybindings.json
+> Vscode does not support symlinks, so just copy and paste(ignored by stow).
 
 
 ### Steps
