@@ -109,6 +109,7 @@
   "explorer.compactFolders": false,
   "zenMode.hideLineNumbers": false,
   "editor.mouseWheelZoom": true,
+  "window.zoomLevel": 1,
   // windows
   "window.dialogStyle": "custom",
   "window.menuBarVisibility": "compact",
@@ -116,7 +117,6 @@
   "window.customMenuBarAltFocus": false,
   "window.titleBarStyle": "custom",
   "window.customTitleBarVisibility": "auto",
-  "window.zoomLevel": 1,
   // workbench
   "workbench.tree.indent": 16,
   "workbench.tree.enableStickyScroll": true,
@@ -133,13 +133,6 @@
   "workbench.iconTheme": "catppuccin-mocha",
   "workbench.productIconTheme": "material-product-icons",
   "workbench.activityBar.location": "top",
-  // misc
-  "telemetry.telemetryLevel": "off",
-  "extensions.ignoreRecommendations": true,
-  "extensions.experimental.affinity": {
-    "vscodevim.vim": 1,
-  },
-  "settingsSync.keybindingsPerPlatform": false,
   // live preview
   "livePreview.openPreviewTarget": "External Browser",
   "livePreview.autoRefreshPreview": "Never",
@@ -330,7 +323,7 @@
         "s",
       ],
       "commands": [
-        "workbench.action.experimental.quickTextSearch"
+        "workbench.action.quickTextSearch"
       ]
     },
     {
@@ -651,16 +644,24 @@
     "stashes",
     "remoteBranches"
   ],
-  "gitlens.rebaseEditor.ordering": "asc",
   "gitlens.views.worktrees.files.layout": "list",
   "gitlens.ai.experimental.provider": "openai",
-  "gitlens.ai.experimental.openai.model": "gpt-4-1106-preview",
+  // misc
+  "telemetry.telemetryLevel": "off",
+  "extensions.ignoreRecommendations": true,
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1,
+  },
+  "biome.lspBin": "/usr/bin/biome",
+  "settingsSync.keybindingsPerPlatform": false,
+  "todo-tree.highlights.enabled": false,
+  "todo-tree.general.statusBar": "top three",
+  "todo-tree.general.showIconsInsteadOfTagsInStatusBar": true,
   // language
   "editor.codeActionsOnSave": {
     "source.fixAll": "never",
     "source.organizeImports": "explicit"
   },
-  "biome.lspBin": "/usr/bin/biome",
   "[javascript]": {
     "editor.maxTokenizationLineLength": 2500,
     "editor.defaultFormatter": "biomejs.biome"
