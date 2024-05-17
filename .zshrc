@@ -65,21 +65,21 @@ eval "$(fnm env --use-on-cd)"
 
 function killp() {
 	if [[ `uname` == "Linux" ]]; then
-		ps ax --forest | peco | awk "{print \$1}" | xargs kill -9
+		ps ax --forest | fzf | awk "{print \$1}" | xargs kill -9
 	elif [[ `uname` == "Darwin" ]]; then
-		ps ax | peco | awk "{print \$1}" | xargs kill -9
+		ps ax | fzf | awk "{print \$1}" | xargs kill -9
 	fi
 }
 
 
-# move to directory found with peco
+# move to directory found with fzf
 # if passing file, move to dir of there
 function cdp() {
 	local P
 	if [[ $PWD = $HOME ]]; then
-		P=$(find ./ $1 -maxdepth 3 ! -path "*/.*" | cat | peco --layout=bottom-up | sed "s|~|$HOME|")
+		P=$(find ./ $1 -maxdepth 3 ! -path "*/.*" | cat | fzf | sed "s|~|$HOME|")
 	else
-		P=$(find ./ $1 -maxdepth 4 ! -path "*/.*" | cat | peco --layout=bottom-up | sed "s|~|$HOME|")
+		P=$(find ./ $1 -maxdepth 4 ! -path "*/.*" | cat | fzf | sed "s|~|$HOME|")
 	fi
 	if test -d $P; then
 		cd $P
@@ -89,12 +89,12 @@ function cdp() {
 }
 
 
-# open file found with peco in vim
+# open file found with fzf in vim
 function vimp() {
 	if git rev-parse 2> /dev/null; then
-		vim $(git ls-files | peco --layout=bottom-up)
+		vim $(git ls-files | fzf)
 	else
-		vim $(find ./ $1 -maxdepth 3 | peco)
+		vim $(find ./ $1 -maxdepth 3 | fzf)
 	fi
 }
 
@@ -114,5 +114,6 @@ add-zsh-hook -Uz chpwd () {
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
 
