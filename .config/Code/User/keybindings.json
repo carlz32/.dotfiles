@@ -153,5 +153,11 @@
 		"key": "l",
 		"command": "editor.action.scrollRightHover",
 		"when": "editorHoverFocused"
+	},
+	// Extension
+	{
+		"key": "ctrl+k v",
+		"command": "livePreview.start.preview.atFile",
+		"when": "vim.mode == 'Normal' && editorLangId == 'html'"
 	}
 ]

@@ -34,6 +34,7 @@ alias vi="nvim"
 alias psp="ps x | fzf"
 alias rate="rate-mirrors arch | sudo tee /etc/pacman.d/mirrorlist"
 alias hp="history | fzf"
+alias phone="scrcpy --video-codec=h264 -m1980 --max-fps=60 -K"
 
 # eza
 alias ll="eza --long --icons"
