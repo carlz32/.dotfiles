@@ -128,6 +128,12 @@
 		"key": "ctrl+t",
 		"command": "workbench.action.togglePanel",
 	},
+	{
+		"key": "ctrl+t",
+		"command": "workbench.action.focusPanel",
+		"when": "!panelFocus"
+	},
+
 	// Hover
 	{
 		"key": "shift+k",
