@@ -1,0 +1,97 @@
+{
+	"layer": "top",
+	"modules-left": [
+        "custom/launcher",
+        "hyprland/workspaces",
+    ],
+	"modules-center": [
+        "hyprland/window"
+    ],
+	"modules-right": [
+        "cpu",
+        "memory",
+        "pulseaudio",
+        "network",
+        "custom/vpn",
+        "clock",
+        "tray",
+        "custom/power"
+    ],
+	
+	"pulseaudio": {
+		"tooltip": false,
+		"scroll-step": 5,
+		"format": "{icon} {volume}%",
+		"format-muted": "{icon} {volume}%",
+		"format-icons": {
+			"default": ["", "", ""]
+		}
+	},
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "on-click": "activate",
+        "sort-by-number": true,
+        "format-icons": {
+            "1": " ",
+            "2": " ",
+            "3": " ",
+            "4": " ",
+            "5": " ",
+            "active": " ",
+            "default": " "
+        },
+        "persistent-workspaces": {
+            "*": [1, 2, 3, 4, 5],
+        }
+    },
+    "hyprland/window": {
+        "format": "{class} - {title}",
+        "max-length": 200,
+        "separate-outputs": true
+    },
+	"network": {
+		"tooltip": false,
+		"format-wifi": "  {essid}",
+		"format-ethernet": ""
+	},
+	"tray":{
+		"icon-size":18,
+		"spacing": 10
+	},
+    "clock": {
+        "format": " {:%H:%M (%Z) %a}",
+        "tooltip-format": "{tz_list}",
+        "timezones": [
+            "Asia/Shanghai",
+            "Etc/UTC",
+            "America/New_York",
+            "America/Montevideo",
+            "America/Los_Angeles",
+        ]
+    },
+    "cpu": {
+        "interval": 15,
+        "format": " {}%",
+        "max-length": 10
+    },
+    "memory": {
+        "interval": 30,
+        "format": " {}%",
+        "max-length": 10
+    },
+    "custom/launcher":{
+        "format": " ",
+        "on-click": "wofi --show drun",
+        "on-click-right": "killall wofi"
+    },
+    "custom/vpn":{
+        "format": " :{}",
+        "exec": "xh -h www.google.com | head -n 1 | cut -d' ' -f2-",
+        "interval": 600,
+        "on-click": "cfw",
+    },
+    "custom/power":{
+        "format": " ",
+        "on-click": "nwg-bar",
+    },
+}

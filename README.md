@@ -11,12 +11,16 @@
     - settings.json
     - keybindings.json
 > Vscode does not support symlinks, so just copy and paste(ignored by stow).
-
+- [Hyprland Window Manager](https://wiki.hyprland.org/)
+    - kitty
+    - dunst
+    - ngw-bar
+    - waybar
 
 ### Steps
 
 ```bash
-git clone --recursive https://github.com/Carl-ZLJ/.dotfiles ~/.dotfiles
+git clone --recursive https://github.com/carlz32/.dotfiles ~/.dotfiles
 cd ~/.dotfiles
 stow .
 ```
