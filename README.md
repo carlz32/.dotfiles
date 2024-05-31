@@ -14,7 +14,7 @@
 - [Hyprland Window Manager](https://wiki.hyprland.org/)
     - kitty
     - dunst
-    - ngw-bar
+    - nwg-bar
     - waybar
 
 ### Steps
