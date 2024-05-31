@@ -3,9 +3,9 @@
 	"modules-left": [
         "custom/launcher",
         "hyprland/workspaces",
+        "hyprland/window"
     ],
 	"modules-center": [
-        "hyprland/window"
     ],
 	"modules-right": [
         "cpu",
@@ -59,7 +59,7 @@
 		"spacing": 10
 	},
     "clock": {
-        "format": " {:%H:%M (%Z) %a}",
+        "format": " {:%A, %B %d, %Y (%R)}",
         "tooltip-format": "{tz_list}",
         "timezones": [
             "Asia/Shanghai",
@@ -85,13 +85,14 @@
         "on-click-right": "killall wofi"
     },
     "custom/vpn":{
-        "format": " :{}",
-        "exec": "xh -h www.google.com | head -n 1 | cut -d' ' -f2-",
+        "format": " {}",
+        "exec": "$HOME/.config/waybar/test-vpn.sh",
+        "on-click": "$HOME/.config/waybar/test-vpn.sh",
         "interval": 600,
-        "on-click": "cfw",
+        "escape": true
     },
     "custom/power":{
         "format": " ",
-        "on-click": "nwg-bar",
-    },
+        "on-click": "nwg-bar"
+    }
 }
