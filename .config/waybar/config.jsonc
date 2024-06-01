@@ -1,12 +1,13 @@
 {
 	"layer": "top",
+    "output": "DP-3",
+    "position": "bottom",
 	"modules-left": [
         "custom/launcher",
         "hyprland/workspaces",
         "hyprland/window"
     ],
-	"modules-center": [
-    ],
+	"modules-center": [],
 	"modules-right": [
         "cpu",
         "memory",
@@ -14,6 +15,7 @@
         "network",
         "custom/vpn",
         "clock",
+        "clock#calendar",
         "tray",
         "custom/power"
     ],
@@ -47,7 +49,6 @@
     "hyprland/window": {
         "format": "{class} - {title}",
         "max-length": 200,
-        "separate-outputs": true
     },
 	"network": {
 		"tooltip": false,
@@ -59,7 +60,7 @@
 		"spacing": 10
 	},
     "clock": {
-        "format": " {:%A, %B %d, %Y (%R)}",
+        "format": " {:%H:%M:%S (%Z)}",
         "tooltip-format": "{tz_list}",
         "timezones": [
             "Asia/Shanghai",
@@ -67,7 +68,11 @@
             "America/New_York",
             "America/Montevideo",
             "America/Los_Angeles",
-        ]
+        ],
+        "interval": 1,
+    },
+    "clock#calendar": {
+        "format": " {:%A, %B %d, %Y}",
     },
     "cpu": {
         "interval": 15,

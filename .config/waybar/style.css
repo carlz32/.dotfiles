@@ -14,21 +14,32 @@ window#waybar.hidden {
 	opacity: 0.2;
 }
 
+tooltip {
+    background: rgba(43, 48, 59, 0.5);
+    border: 1px solid rgba(100, 114, 125, 0.5);
+}
+tooltip label {
+    color: white;
+    font-size: 16px;
+}
+
 #custom-launcher {
 	font-size: 24px;
 	margin-left: 8px;
+    margin-bottom: 4px;
 	padding-left: 10px;
 	padding-right: 5px;
 	border-radius: 10px;
 	transition: none;
     color: #89DCEB;
-    background: #161320;
+    background: #191716;
 }
 
 #workspaces {
-	margin-left: 12px;
+	margin-left: 8px;
+    margin-bottom: 4px;
 	border-radius: 10px;
-	background: #161320;
+	background: #1B2021;
 	transition: none;
 }
 
@@ -66,16 +77,19 @@ window#waybar.hidden {
 
 #window {
     margin-left: 8px;
+    margin-bottom: 4px;
 	padding-left: 15px;
 	padding-right: 15px;
 	border-radius: 10px;
 	transition: none;
     color: #B5E8E0;
-	background: #161320;
+	background: #36453B;
+    min-width: 700px;
 }
 
 #memory {
 	margin-left: 8px;
+    margin-bottom: 4px;
 	padding-left: 10px;
 	padding-right: 10px;
 	border-radius: 10px;
@@ -86,6 +100,7 @@ window#waybar.hidden {
 
 #cpu {
 	margin-left: 8px;
+    margin-bottom: 4px;
 	padding-left: 10px;
 	padding-right: 10px;
 	border-radius: 10px;
@@ -96,6 +111,7 @@ window#waybar.hidden {
 
 #pulseaudio {
 	margin-left: 8px;
+    margin-bottom: 4px;
 	padding-left: 10px;
 	padding-right: 10px;
 	border-radius: 10px;
@@ -106,6 +122,7 @@ window#waybar.hidden {
 
 #network {
 	margin-left: 8px;
+    margin-bottom: 4px;
 	padding-left: 10px;
 	padding-right: 10px;
 	border-radius: 10px;
@@ -116,6 +133,7 @@ window#waybar.hidden {
 
 #custom-vpn {
 	margin-left: 8px;
+    margin-bottom: 4px;
 	padding-left: 10px;
 	padding-right: 10px;
 	border-radius: 10px;
@@ -126,17 +144,29 @@ window#waybar.hidden {
 
 #clock {
 	margin-left: 8px;
+    margin-bottom: 4px;
 	padding-left: 10px;
 	padding-right: 10px;
 	border-radius: 10px;
 	transition: none;
 	color: #161320;
 	background: #ABE9B3;
-	/*background: #1A1826;*/
+}
+
+#clock.calendar {
+	margin-left: 8px;
+    margin-bottom: 4px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 10px;
+	transition: none;
+	color: #161320;
+	background: #51D6FF;
 }
 
 #tray {
 	margin-left: 8px;
+    margin-bottom: 4px;
 	padding-left: 10px;
 	padding-right: 10px;
 	border-radius: 10px;
@@ -146,9 +176,10 @@ window#waybar.hidden {
 }
 
 #custom-power {
-	font-size: 20px;
+	font-size: 16px;
 	margin-left: 8px;
 	margin-right: 8px;
+    margin-bottom: 4px;
 	padding-left: 10px;
 	padding-right: 5px;
 	border-radius: 10px;
@@ -159,6 +190,7 @@ window#waybar.hidden {
 
 #battery {
 	margin-left: 8px;
+    margin-bottom: 4px;
 	padding-left: 10px;
 	padding-right: 10px;
 	border-radius: 10px;
@@ -191,6 +223,7 @@ window#waybar.hidden {
 
 #backlight {
 	margin-left: 8px;
+    margin-bottom: 4px;
 	padding-left: 10px;
 	padding-right: 10px;
 	border-radius: 10px;
