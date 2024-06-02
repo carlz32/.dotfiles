@@ -3,7 +3,6 @@
     "output": "DP-3",
     "position": "bottom",
 	"modules-left": [
-        "custom/launcher",
         "hyprland/workspaces",
         "hyprland/window"
     ],
@@ -18,39 +17,17 @@
         "tray",
         "custom/power"
     ],
-	"pulseaudio": {
-		"tooltip": false,
-		"scroll-step": 5,
-		"format": "{icon} {volume}%",
-		"format-muted": "{icon} {volume}%",
-		"format-icons": {
-			"default": [" ", " ", " "]
-		}
-	},
     "hyprland/workspaces": {
         "format": "{name}",
         "on-click": "activate",
         "sort-by-number": true,
         "persistent-workspaces": {
-            "*": [1, 2, 3, 4, 5],
+            "*": [1, 2, 3, 4, 5]
         }
     },
     "hyprland/window": {
         "format": "{class} - {title}",
-        "max-length": 200,
-    },
-	"network": {
-		"format-wifi": "  {ipaddr}",
-		"format-ethernet": "  Disconnected",
-	},
-	"tray":{
-		"icon-size":18,
-		"spacing": 10
-	},
-    "clock": {
-        "format": "  {:%H:%M:%S (%Z)}",
-        "tooltip-format": "{:%Y-%m-%d}",
-        "interval": 1,
+        "max-length": 200
     },
     "cpu": {
         "interval": 15,
@@ -62,15 +39,40 @@
         "format": "  {}%",
         "max-length": 10
     },
+	"pulseaudio": {
+		"tooltip": false,
+		"scroll-step": 5,
+		"format": "{icon} {volume}%",
+		"format-muted": "{icon} {volume}%",
+		"format-icons": {
+			"default": [" ", " ", " "]
+		}
+	},
+	"network": {
+		"format-wifi": "  {ipaddr}",
+		"format-ethernet": "  Disconnected",
+        "tooltip-format": "{essid}" 
+	},
     "custom/vpn":{
         "format": "{}",
         "exec": "$HOME/.config/waybar/test-vpn.sh",
         "on-click": "$HOME/.config/waybar/test-vpn.sh",
         "interval": 600,
-        "escape": true
+        "escape": true,
+        "tooltip": false
     },
+    "clock": {
+        "format": "  {:%H:%M:%S (%Z)}",
+        "tooltip-format": "{:%Y-%m-%d}",
+        "interval": 1
+    },
+	"tray":{
+		"icon-size":18,
+		"spacing": 10
+	},
     "custom/power":{
         "format": " ",
-        "on-click": "nwg-bar"
+        "on-click": "nwg-bar",
+        "tooltip": false
     }
 }
