@@ -3,7 +3,7 @@
 	border-radius: 10px;
     font-family: "Hack Nerd Font";
 	font-size: 12px;
-	min-height: 10px;
+	min-height: 12px;
 }
 
 window#waybar {
@@ -18,6 +18,7 @@ tooltip {
     background: rgba(43, 48, 59, 0.5);
     border: 1px solid rgba(100, 114, 125, 0.5);
 }
+
 tooltip label {
     color: white;
     font-size: 16px;
@@ -25,9 +26,8 @@ tooltip label {
 
 #custom-launcher {
 	font-size: 24px;
-	margin-left: 8px;
-    margin-bottom: 4px;
-	padding-left: 10px;
+	margin-left: 2px;
+    padding-left: 10px;
 	padding-right: 5px;
 	border-radius: 10px;
 	transition: none;
@@ -37,8 +37,7 @@ tooltip label {
 
 #workspaces {
 	margin-left: 8px;
-    margin-bottom: 4px;
-	border-radius: 10px;
+    border-radius: 10px;
 	background: #1B2021;
 	transition: none;
 }
@@ -77,20 +76,18 @@ tooltip label {
 
 #window {
     margin-left: 8px;
-    margin-bottom: 4px;
-	padding-left: 15px;
+    padding-left: 15px;
 	padding-right: 15px;
 	border-radius: 10px;
 	transition: none;
     color: #B5E8E0;
 	background: #36453B;
-    min-width: 700px;
+    min-width: 780px;
 }
 
 #memory {
 	margin-left: 8px;
-    margin-bottom: 4px;
-	padding-left: 10px;
+    padding-left: 10px;
 	padding-right: 10px;
 	border-radius: 10px;
 	transition: none;
@@ -100,8 +97,7 @@ tooltip label {
 
 #cpu {
 	margin-left: 8px;
-    margin-bottom: 4px;
-	padding-left: 10px;
+    padding-left: 10px;
 	padding-right: 10px;
 	border-radius: 10px;
 	transition: none;
@@ -111,8 +107,7 @@ tooltip label {
 
 #pulseaudio {
 	margin-left: 8px;
-    margin-bottom: 4px;
-	padding-left: 10px;
+    padding-left: 10px;
 	padding-right: 10px;
 	border-radius: 10px;
 	transition: none;
@@ -122,8 +117,7 @@ tooltip label {
 
 #network {
 	margin-left: 8px;
-    margin-bottom: 4px;
-	padding-left: 10px;
+    padding-left: 10px;
 	padding-right: 10px;
 	border-radius: 10px;
 	transition: none;
@@ -133,8 +127,7 @@ tooltip label {
 
 #custom-vpn {
 	margin-left: 8px;
-    margin-bottom: 4px;
-	padding-left: 10px;
+    padding-left: 10px;
 	padding-right: 10px;
 	border-radius: 10px;
 	transition: none;
@@ -144,8 +137,7 @@ tooltip label {
 
 #clock {
 	margin-left: 8px;
-    margin-bottom: 4px;
-	padding-left: 10px;
+    padding-left: 10px;
 	padding-right: 10px;
 	border-radius: 10px;
 	transition: none;
@@ -155,8 +147,7 @@ tooltip label {
 
 #clock.calendar {
 	margin-left: 8px;
-    margin-bottom: 4px;
-	padding-left: 10px;
+    padding-left: 10px;
 	padding-right: 10px;
 	border-radius: 10px;
 	transition: none;
@@ -166,8 +157,7 @@ tooltip label {
 
 #tray {
 	margin-left: 8px;
-    margin-bottom: 4px;
-	padding-left: 10px;
+    padding-left: 10px;
 	padding-right: 10px;
 	border-radius: 10px;
 	transition: none;
@@ -178,9 +168,8 @@ tooltip label {
 #custom-power {
 	font-size: 16px;
 	margin-left: 8px;
-	margin-right: 8px;
-    margin-bottom: 4px;
-	padding-left: 10px;
+	margin-right: 2px;
+    padding-left: 10px;
 	padding-right: 5px;
 	border-radius: 10px;
 	transition: none;
@@ -190,8 +179,7 @@ tooltip label {
 
 #battery {
 	margin-left: 8px;
-    margin-bottom: 4px;
-	padding-left: 10px;
+    padding-left: 10px;
 	padding-right: 10px;
 	border-radius: 10px;
 	transition: none;
@@ -223,8 +211,7 @@ tooltip label {
 
 #backlight {
 	margin-left: 8px;
-    margin-bottom: 4px;
-	padding-left: 10px;
+    padding-left: 10px;
 	padding-right: 10px;
 	border-radius: 10px;
 	transition: none;
