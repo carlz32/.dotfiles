@@ -15,33 +15,22 @@
         "network",
         "custom/vpn",
         "clock",
-        "clock#calendar",
         "tray",
         "custom/power"
     ],
-	
 	"pulseaudio": {
 		"tooltip": false,
 		"scroll-step": 5,
 		"format": "{icon} {volume}%",
 		"format-muted": "{icon} {volume}%",
 		"format-icons": {
-			"default": ["", "", ""]
+			"default": [" ", " ", " "]
 		}
 	},
     "hyprland/workspaces": {
-        "format": "{icon}",
+        "format": "{name}",
         "on-click": "activate",
         "sort-by-number": true,
-        "format-icons": {
-            "1": " ",
-            "2": " ",
-            "3": " ",
-            "4": " ",
-            "5": " ",
-            "active": " ",
-            "default": " "
-        },
         "persistent-workspaces": {
             "*": [1, 2, 3, 4, 5],
         }
@@ -51,46 +40,30 @@
         "max-length": 200,
     },
 	"network": {
-		"tooltip": false,
-		"format-wifi": "  {essid}",
-		"format-ethernet": ""
+		"format-wifi": "  {ipaddr}",
+		"format-ethernet": "  Disconnected",
 	},
 	"tray":{
 		"icon-size":18,
 		"spacing": 10
 	},
     "clock": {
-        "format": " {:%H:%M:%S (%Z)}",
-        "tooltip-format": "{tz_list}",
-        "timezones": [
-            "Asia/Shanghai",
-            "Etc/UTC",
-            "America/New_York",
-            "America/Montevideo",
-            "America/Los_Angeles",
-        ],
+        "format": "  {:%H:%M:%S (%Z)}",
+        "tooltip-format": "{:%Y-%m-%d}",
         "interval": 1,
-    },
-    "clock#calendar": {
-        "format": " {:%A, %B %d, %Y}",
     },
     "cpu": {
         "interval": 15,
-        "format": " {}%",
+        "format": "  {}%",
         "max-length": 10
     },
     "memory": {
         "interval": 30,
-        "format": " {}%",
+        "format": "  {}%",
         "max-length": 10
     },
-    "custom/launcher":{
-        "format": " ",
-        "on-click": "wofi --show drun",
-        "on-click-right": "killall wofi"
-    },
     "custom/vpn":{
-        "format": " {}",
+        "format": "{}",
         "exec": "$HOME/.config/waybar/test-vpn.sh",
         "on-click": "$HOME/.config/waybar/test-vpn.sh",
         "interval": 600,
