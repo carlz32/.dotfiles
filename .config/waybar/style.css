@@ -32,13 +32,13 @@ tooltip label {
 }
 
 #workspaces button {
-	padding: 0px 10px 0px 10px; 
+	padding: 0px 8px 0px 8px; 
  	min-width: 1px;
 	color: #888888;
 }
 
 #workspaces button.active { 
-	padding: 0px 10px 0px 10px; 
+	padding: 0px 8px 0px 8px; 
 	background-color: #225877;
 	color: #ffffff;
 }
@@ -46,7 +46,7 @@ tooltip label {
 #window {
     background-color: #225877;
     color: #ffffff;
-    padding: 0px 10px 0px 10px;
+    padding: 0px 8px 0px 8px;
 }
 
 window#waybar.empty #window {
