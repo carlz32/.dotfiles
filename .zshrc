@@ -22,6 +22,9 @@ export SUDO_EDITOR="nvim"
 # python
 export PATH=$HOME/.local/bin:$PATH
 
+# golang
+export PATH=$HOME/go/bin:$PATH
+export GOPATH=$HOME/go
 
 # plugins
 plugins=(
