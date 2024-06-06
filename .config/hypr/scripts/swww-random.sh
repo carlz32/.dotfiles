@@ -26,7 +26,9 @@ while true; do
 		done \
 		| sort -n | cut -d':' -f2- \
 		| while read -r img; do
-			swww img "$img"
-			sleep $INTERVAL
+			if [[ "$img" != "$1" ]]; then
+				swww img "$img"
+				sleep $INTERVAL
+			fi
 		done
 done
