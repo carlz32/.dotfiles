@@ -356,6 +356,15 @@
     },
     {
       "before": [
+        "<leader>",
+        "e",
+      ],
+      "commands": [
+        "workbench.action.toggleSidebarVisibility",
+      ]
+    },
+    {
+      "before": [
         "]",
         "e"
       ],
