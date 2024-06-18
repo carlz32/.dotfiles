@@ -1,96 +1,83 @@
 {
-    "layer": "top",
-    "output": "DP-3",
-    "position": "bottom",
-    "modules-left": [
-        "hyprland/workspaces",
-        "hyprland/window"
-    ],
-    "modules-center": [],
-    "modules-right": [
-        "cpu",
-        "memory",
-        "pulseaudio",
-        "network",
-        "custom/vpn",
-        "clock",
-        "hyprland/submap",
-        "tray",
-        "custom/power"
-    ],
-    "hyprland/workspaces": {
-        "format": "{name}",
-        "on-click": "activate",
-        "sort-by-number": true,
-        "persistent-workspaces": {
-            "*": [
-                1,
-                2,
-                3,
-                4,
-                5
-            ]
-        }
-    },
-    "hyprland/window": {
-        "format": "{class}",
-        "max-length": 200
-    },
-    "hyprland/submap": {
-        "format": "✌️ {}",
-        "max-length": 20,
-        "tooltip": false,
-        "always-on": true,
-        "default-submap": "default"
-    },
-    "cpu": {
-        "interval": 15,
-        "format": "  {}%",
-        "max-length": 10
-    },
-    "memory": {
-        "interval": 30,
-        "format": "  {}%",
-        "max-length": 10
-    },
-    "pulseaudio": {
-        "tooltip": false,
-        "scroll-step": 5,
-        "format": "{icon} {volume}%",
-        "format-muted": "{icon} {volume}%",
-        "format-icons": {
-            "default": [
-                " ",
-                " ",
-                " "
-            ]
-        }
-    },
-    "network": {
-        "format-wifi": "  {ipaddr}",
-        "format-ethernet": "  Disconnected",
-        "tooltip-format": "{essid}"
-    },
-    "custom/vpn": {
-        "format": "{}",
-        "exec": "$HOME/.config/waybar/test-vpn.sh",
-        "on-click": "$HOME/.config/waybar/test-vpn.sh",
-        "interval": 600,
-        "escape": true,
-        "tooltip": false
-    },
-    "clock": {
-        "format": "  {:%H:%M:%S (%Z)}",
-        "tooltip-format": "{:%Y-%m-%d}",
-        "interval": 1
-    },
-    "tray": {
-        "icon-size": 18,
-        "spacing": 10
-    },
-    "custom/power": {
-        "format": " ",
-        "on-click": "nwg-bar",
-        "tooltip": false
-    }
+	"layer": "top",
+	"output": "DP-3",
+	"position": "bottom",
+	"modules-left": ["hyprland/workspaces", "hyprland/window"],
+	"modules-center": [],
+	"modules-right": [
+		"cpu",
+		"memory",
+		"pulseaudio",
+		"network",
+		"custom/vpn",
+		"clock",
+		"hyprland/submap",
+		"tray",
+		"custom/power"
+	],
+	"hyprland/workspaces": {
+		"format": "{name}",
+		"on-click": "activate",
+		"sort-by-number": true,
+		"persistent-workspaces": {
+			"*": [1, 2, 3, 4, 5]
+		}
+	},
+	"hyprland/window": {
+		"format": "{class}",
+		"max-length": 200
+	},
+	"hyprland/submap": {
+		"format": "✌️ {}",
+		"max-length": 20,
+		"tooltip": false,
+		"always-on": true,
+		"default-submap": "default"
+	},
+	"cpu": {
+		"interval": 15,
+		"format": "  {}%",
+		"max-length": 10
+	},
+	"memory": {
+		"interval": 30,
+		"format": "  {}%",
+		"max-length": 10
+	},
+	"pulseaudio": {
+		"tooltip": false,
+		"scroll-step": 5,
+		"format": "{icon} {volume}%",
+		"format-muted": "{icon} {volume}%",
+		"format-icons": {
+			"default": [" ", " ", " "]
+		}
+	},
+	"network": {
+		"format-wifi": "  {ipaddr}",
+		"format-ethernet": "  Disconnected",
+		"tooltip-format": "{essid}"
+	},
+	"custom/vpn": {
+		"format": "{}",
+		"exec": "$HOME/.config/waybar/test-vpn.sh",
+		"on-click": "$HOME/.config/waybar/test-vpn.sh",
+		"interval": 600,
+		"escape": true,
+		"tooltip": false
+	},
+	"clock": {
+		"format": "  {:%H:%M:%S (%Z)}",
+		"tooltip-format": "{:%Y-%m-%d}",
+		"interval": 1
+	},
+	"tray": {
+		"icon-size": 18,
+		"spacing": 10
+	},
+	"custom/power": {
+		"format": " ",
+		"on-click": "nwg-bar",
+		"tooltip": false
+	}
 }
