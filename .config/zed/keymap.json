@@ -12,7 +12,8 @@
     "context": "Editor && vim_mode == normal && vim_operator == none && !VimWaiting",
     "bindings": {
       "tab": "pane::ActivateNextItem",
-      "shift-tab": "pane::ActivatePrevItem"
+      "shift-tab": "pane::ActivatePrevItem",
+      "ctrl-j": "workspace::ToggleBottomDock"
     }
   },
   {
