@@ -7,35 +7,35 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "theme": "Andromeda",
-  "ui_font_size": 18,
-  "ui_font_family": "Hack Nerd Font",
-  "buffer_font_size": 27,
-  "buffer_font_family": "Iosevka Nerd Font",
-  "confirm_quit": true,
-  "format_on_save": "on",
-  "autosave": "on_focus_change",
-  "vim_mode": true,
-  "tabs": {
-    "close_position": "left",
-    "git_status": true
-  },
-  "always_treat_brackets_as_autoclosed": true,
-  "relative_line_numbers": true,
-  "vertical_scroll_margin": 0,
-  "terminal": {
-    "font_family": "Iosevka Nerd Font",
-    "font_size": 18
-  },
-  "vim": {
-    "use_system_clipboard": "always",
-    "use_multiline_find": true
-  },
-  "prettier": {
-    "allowed": false,
-    "trailingComma": "es5",
-    "tabWidth": 4,
-    "semi": false,
-    "singleQuote": true
-  }
+    "theme": "Andromeda",
+    "ui_font_size": 18,
+    "ui_font_family": "Hack Nerd Font",
+    "buffer_font_size": 27,
+    "buffer_font_family": "Iosevka Nerd Font",
+    "confirm_quit": true,
+    "format_on_save": "on",
+    "autosave": "on_focus_change",
+    "vim_mode": true,
+    "tabs": {
+        "close_position": "left",
+        "git_status": true
+    },
+    "always_treat_brackets_as_autoclosed": true,
+    "relative_line_numbers": true,
+    "vertical_scroll_margin": 13,
+    "terminal": {
+        "font_family": "Iosevka Nerd Font",
+        "font_size": 18
+    },
+    "vim": {
+        "use_system_clipboard": "always",
+        "use_multiline_find": true
+    },
+    "prettier": {
+        "allowed": true,
+        "trailingComma": "es5",
+        "tabWidth": 4,
+        "semi": false,
+        "singleQuote": true
+    }
 }
