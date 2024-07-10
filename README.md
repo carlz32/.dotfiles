@@ -7,8 +7,10 @@
 - [tmux](https://github.com/tmux/tmux)
 - [neovim](https://github.com/neovim/neovim)
 - [stow](https://github.com/aspiers/stow)
-- Visual Studio Code - settings.json - keybindings.json
-  > Vscode does not support symlinks, so just copy and paste(ignored by stow).
+- Visual Studio Code
+  - settings.json
+  - keybindings.json
+    > Vscode does not support symlinks, so just copy and paste(ignored by **stow**).
 - [Hyprland Window Manager](https://wiki.hyprland.org/)
   - kitty
   - dunst
