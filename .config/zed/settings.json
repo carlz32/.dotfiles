@@ -7,7 +7,7 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-    "theme": "Andromeda",
+    "theme": "GitHub Dark Default",
     "ui_font_size": 18,
     "ui_font_family": "JetBrains Mono Nerd Font",
     "buffer_font_size": 22,
