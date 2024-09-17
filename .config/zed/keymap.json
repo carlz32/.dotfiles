@@ -27,9 +27,9 @@
     {
         "context": "Editor && VimControl && !VimWaiting && !menu",
         "bindings": {
-            "w": "vim::NextSubwordStart",
-            "b": "vim::PreviousSubwordStart",
-            "e": "vim::NextSubwordEnd",
+            "space w": "vim::NextSubwordStart",
+            "space b": "vim::PreviousSubwordStart",
+            "space e": "vim::NextSubwordEnd",
             "g e": "vim::PreviousSubwordEnd"
         }
     }

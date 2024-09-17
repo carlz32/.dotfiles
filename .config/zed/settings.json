@@ -7,11 +7,11 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-    "theme": "GitHub Dark Default",
+    "theme": "Gruvbox Dark",
     "ui_font_size": 18,
-    "ui_font_family": "JetBrains Mono Nerd Font",
+    "ui_font_family": "JetBrainsMono Nerd Font",
     "buffer_font_size": 22,
-    "buffer_font_family": "JetBrains Mono Nerd Font",
+    "buffer_font_family": "JetBrainsMono Nerd Font",
     "confirm_quit": true,
     "format_on_save": "on",
     "autosave": "on_focus_change",
@@ -24,7 +24,7 @@
     "relative_line_numbers": true,
     "vertical_scroll_margin": 13,
     "terminal": {
-        "font_family": "JetBrains Mono Nerd Font",
+        "font_family": "JetBrainsMono Nerd Font",
         "font_size": 18
     },
     "vim": {
