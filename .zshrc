@@ -35,7 +35,7 @@ alias ap="alias | fzf"
 alias tldrf="tldr --list | fzf --preview 'tldr {1}' --preview-window=right:70% | xargs tldr"
 alias vi="nvim"
 alias psp="ps x | fzf"
-# alias rate="rate-mirrors arch | sudo tee /etc/pacman.d/mirrorlist"
+alias rate="rate-mirrors arch | sudo tee /etc/pacman.d/mirrorlist"
 alias hp="history | fzf"
 alias phone="scrcpy --video-codec=h264 -m1080 --max-fps=120"
 

@@ -21,7 +21,7 @@
 ### Steps
 
 ```bash
-git clone --recursive https://github.com/carlz32/.dotfiles ~/.dotfiles
+git clone -b master --recursive https://github.com/carlz32/.dotfiles ~/.dotfiles
 cd ~/.dotfiles
 stow .
 ```
