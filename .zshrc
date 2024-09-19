@@ -131,5 +131,5 @@ add-zsh-hook -Uz chpwd () {
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 # Set up fzf key bindings and fuzzy completion
-source <(fzf --zsh)
+FZF_ALT_C_COMMAND= source <(fzf --zsh)
 
