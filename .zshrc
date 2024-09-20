@@ -1,18 +1,19 @@
-# If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+# Homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+
+# zoxide
+eval "$(zoxide init --cmd cd zsh)"
+
+
+# fnm
+eval "$(fnm env --use-on-cd)"
 
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 export SUDO_EDITOR="nvim"
 
-
-# python
-export PATH=$HOME/.local/bin:$PATH
-
-# golang
-export PATH=$HOME/go/bin:$PATH
-export GOPATH=$HOME/go
 
 # plugins
 plugins=(
@@ -35,9 +36,9 @@ alias ap="alias | fzf"
 alias tldrf="tldr --list | fzf --preview 'tldr {1}' --preview-window=right:70% | xargs tldr"
 alias vi="nvim"
 alias psp="ps x | fzf"
-# alias rate="rate-mirrors arch | sudo tee /etc/pacman.d/mirrorlist"
 alias hp="history | fzf"
 alias phone="scrcpy --video-codec=h264 -m1080 --max-fps=120"
+
 
 # eza
 alias ll="eza --long --icons"
@@ -57,16 +58,6 @@ alias tw="nr test --watch"
 alias w="nr watch"
 alias lint="nr lint"
 alias lintf="nr lint --fix"
-
-# Homebrew
-eval "$(/opt/homebrew/bin/brew shellenv)"
-
-# zoxide
-eval "$(zoxide init --cmd cd zsh)"
-
-
-# fnm
-eval "$(fnm env --use-on-cd)"
 
 
 function killp() {
@@ -105,19 +96,10 @@ function vimp() {
 }
 
 
-function yy() {
-	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
-	yazi "$@" --cwd-file="$tmp"
-	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
-		cd -- "$cwd"
-	fi
-	rm -f -- "$tmp"
-}
-
-
 function take() {
   mkdir $1 && cd $1
 }
+
 
 # auto ll after cd into a directory
 autoload -U add-zsh-hook
@@ -132,4 +114,3 @@ add-zsh-hook -Uz chpwd () {
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 # Set up fzf key bindings and fuzzy completion
 FZF_ALT_C_COMMAND= source <(fzf --zsh)
-
