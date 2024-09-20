@@ -2,10 +2,6 @@
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 
-# zoxide
-eval "$(zoxide init --cmd cd zsh)"
-
-
 # fnm
 eval "$(fnm env --use-on-cd)"
 
@@ -114,3 +110,7 @@ add-zsh-hook -Uz chpwd () {
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 # Set up fzf key bindings and fuzzy completion
 FZF_ALT_C_COMMAND= source <(fzf --zsh)
+
+
+# zoxide
+eval "$(zoxide init --cmd cd zsh)"
