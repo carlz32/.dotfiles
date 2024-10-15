@@ -19,6 +19,7 @@ plugins=(
 	fzf
 	gh
 	rust
+    zsh-vi-mode
 )
 
 
