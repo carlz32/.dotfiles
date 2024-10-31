@@ -9,9 +9,9 @@
 {
     "theme": "Gruvbox Dark",
     "ui_font_size": 18,
-    "ui_font_family": "JetBrainsMono Nerd Font",
+    "ui_font_family": "MonaspiceNe Nerd Font",
     "buffer_font_size": 22,
-    "buffer_font_family": "JetBrainsMono Nerd Font",
+    "buffer_font_family": "MonaspiceNe Nerd Font",
     "confirm_quit": true,
     "format_on_save": "on",
     "autosave": "on_focus_change",
@@ -24,7 +24,7 @@
     "relative_line_numbers": true,
     "vertical_scroll_margin": 13,
     "terminal": {
-        "font_family": "JetBrainsMono Nerd Font",
+        "font_family": "MonaspiceNe Nerd Font",
         "font_size": 18
     },
     "vim": {
