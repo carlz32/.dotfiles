@@ -15,18 +15,24 @@
         }
     },
     {
-        "context": "Dock",
-        "bindings": {
-            "ctrl-w h": ["workspace::ActivatePaneInDirection", "Left"],
-            "ctrl-w l": ["workspace::ActivatePaneInDirection", "Right"],
-            "ctrl-w k": ["workspace::ActivatePaneInDirection", "Up"],
-            "ctrl-w j": ["workspace::ActivatePaneInDirection", "Down"]
-        }
-    },
-    {
         "context": "Editor && VimControl && !VimWaiting && !menu",
         "bindings": {
             "g e": "vim::PreviousSubwordEnd"
+        }
+    },
+    {
+        "context": "ProjectPanel || CollabPanel || OutlinePanel || ChatPanel || VimControl || EmptyPane || SharedScreen || MarkdownPreview || KeyContextView",
+        "bindings": {
+            "s h": ["workspace::ActivatePaneInDirection", "Left"],
+            "s l": ["workspace::ActivatePaneInDirection", "Right"],
+            "s k": ["workspace::ActivatePaneInDirection", "Up"],
+            "s j": ["workspace::ActivatePaneInDirection", "Down"],
+            "s v": "pane::SplitVertical",
+            "s s": "pane::SplitHorizontal",
+            "ctrl-w right": ["vim::ResizePane", "Widen"],
+            "ctrl-w left": ["vim::ResizePane", "Narrow"],
+            "ctrl-w down": ["vim::ResizePane", "Shorten"],
+            "ctrl-w up": ["vim::ResizePane", "Lengthen"]
         }
     }
 ]
