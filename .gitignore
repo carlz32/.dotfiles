@@ -2,3 +2,4 @@
 .config/zed/embeddings/*
 .config/zed/conversations/*
 .config/zed/themes/*
+.DS_Store

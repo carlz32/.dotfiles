@@ -23,3 +23,5 @@
 	defaultBranch = main
 [push]
     recurseSubmodules = on-demand
+[gitbutler]
+	gitbutlerCommitter = 1
