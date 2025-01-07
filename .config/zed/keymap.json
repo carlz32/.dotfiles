@@ -10,8 +10,7 @@
         "context": "Editor && vim_mode == normal && vim_operator == none && !VimWaiting",
         "bindings": {
             "tab": "pane::ActivateNextItem",
-            "shift-tab": "pane::ActivatePrevItem",
-            "space s": "pane::DeploySearch"
+            "shift-tab": "pane::ActivatePrevItem"
         }
     },
     {
