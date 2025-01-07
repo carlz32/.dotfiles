@@ -22,16 +22,16 @@
     {
         "context": "ProjectPanel || CollabPanel || OutlinePanel || ChatPanel || VimControl || EmptyPane || SharedScreen || MarkdownPreview || KeyContextView",
         "bindings": {
-            "s h": ["workspace::ActivatePaneInDirection", "Left"],
-            "s l": ["workspace::ActivatePaneInDirection", "Right"],
-            "s k": ["workspace::ActivatePaneInDirection", "Up"],
-            "s j": ["workspace::ActivatePaneInDirection", "Down"],
-            "s v": "pane::SplitVertical",
-            "s s": "pane::SplitHorizontal",
-            "ctrl-w right": ["vim::ResizePane", "Widen"],
-            "ctrl-w left": ["vim::ResizePane", "Narrow"],
-            "ctrl-w down": ["vim::ResizePane", "Shorten"],
-            "ctrl-w up": ["vim::ResizePane", "Lengthen"]
+            "space w h": ["workspace::ActivatePaneInDirection", "Left"],
+            "space w l": ["workspace::ActivatePaneInDirection", "Right"],
+            "space w k": ["workspace::ActivatePaneInDirection", "Up"],
+            "space w j": ["workspace::ActivatePaneInDirection", "Down"],
+            "space w v": "pane::SplitVertical",
+            "space w s": "pane::SplitHorizontal",
+            "space w right": ["vim::ResizePane", "Widen"],
+            "space w left": ["vim::ResizePane", "Narrow"],
+            "space w down": ["vim::ResizePane", "Shorten"],
+            "space w up": ["vim::ResizePane", "Lengthen"]
         }
     }
 ]
