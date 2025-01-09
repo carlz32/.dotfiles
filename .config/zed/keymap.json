@@ -33,5 +33,14 @@
             "space w down": ["vim::ResizePane", "Shorten"],
             "space w up": ["vim::ResizePane", "Lengthen"]
         }
+    },
+    {
+        "context": "Dock",
+        "bindings": {
+            "space w h": ["workspace::ActivatePaneInDirection", "Left"],
+            "space w l": ["workspace::ActivatePaneInDirection", "Right"],
+            "space w k": ["workspace::ActivatePaneInDirection", "Up"],
+            "space w j": ["workspace::ActivatePaneInDirection", "Down"]
+        }
     }
 ]
