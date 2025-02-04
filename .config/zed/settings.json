@@ -31,7 +31,7 @@
     "ui_font_size": 18,
     "ui_font_family": "SF Mono",
     "buffer_font_size": 22,
-    "buffer_font_family": "SF Mono",
+    "buffer_font_family": "FiraCode Nerd Font",
     "confirm_quit": true,
     "format_on_save": "on",
     "autosave": "on_focus_change",
@@ -44,7 +44,7 @@
     "relative_line_numbers": true,
     "vertical_scroll_margin": 13,
     "terminal": {
-        "font_family": "SF Mono",
+        "font_family": "FiraCode Nerd Font",
         "font_size": 18
     },
     "vim": {
