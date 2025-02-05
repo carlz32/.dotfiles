@@ -20,27 +20,27 @@
         }
     },
     {
-        "context": "ProjectPanel || CollabPanel || OutlinePanel || ChatPanel || VimControl || EmptyPane || SharedScreen || MarkdownPreview || KeyContextView",
+        "context": "ProjectPanel || CollabPanel || OutlinePanel || AssistantPanel || VimControl || EmptyPane || SharedScreen || MarkdownPreview || KeyContextView",
         "bindings": {
-            "space w h": ["workspace::ActivatePaneInDirection", "Left"],
-            "space w l": ["workspace::ActivatePaneInDirection", "Right"],
-            "space w k": ["workspace::ActivatePaneInDirection", "Up"],
-            "space w j": ["workspace::ActivatePaneInDirection", "Down"],
-            "space w v": "pane::SplitVertical",
-            "space w s": "pane::SplitHorizontal",
-            "space w right": ["vim::ResizePane", "Widen"],
-            "space w left": ["vim::ResizePane", "Narrow"],
-            "space w down": ["vim::ResizePane", "Shorten"],
-            "space w up": ["vim::ResizePane", "Lengthen"]
+            "ctrl-s h": ["workspace::ActivatePaneInDirection", "Left"],
+            "ctrl-s l": ["workspace::ActivatePaneInDirection", "Right"],
+            "ctrl-s k": ["workspace::ActivatePaneInDirection", "Up"],
+            "ctrl-s j": ["workspace::ActivatePaneInDirection", "Down"],
+            "ctrl-s v": "pane::SplitVertical",
+            "ctrl-s s": "pane::SplitHorizontal",
+            "ctrl-s right": ["vim::ResizePane", "Widen"],
+            "ctrl-s left": ["vim::ResizePane", "Narrow"],
+            "ctrl-s down": ["vim::ResizePane", "Shorten"],
+            "ctrl-s up": ["vim::ResizePane", "Lengthen"]
         }
     },
     {
         "context": "Dock",
         "bindings": {
-            "space w h": ["workspace::ActivatePaneInDirection", "Left"],
-            "space w l": ["workspace::ActivatePaneInDirection", "Right"],
-            "space w k": ["workspace::ActivatePaneInDirection", "Up"],
-            "space w j": ["workspace::ActivatePaneInDirection", "Down"]
+            "ctrl-s h": ["workspace::ActivatePaneInDirection", "Left"],
+            "ctrl-s l": ["workspace::ActivatePaneInDirection", "Right"],
+            "ctrl-s k": ["workspace::ActivatePaneInDirection", "Up"],
+            "ctrl-s j": ["workspace::ActivatePaneInDirection", "Down"]
         }
     }
 ]
