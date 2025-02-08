@@ -1,6 +1,6 @@
-## Dotfiles
+# Dotfiles
 
-### Requirements
+## Requirements
 
 - zsh
 - [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)
@@ -18,7 +18,7 @@
   - waybar
 - Zed
 
-### Steps
+## Steps
 
 ```bash
 git clone -b macOS --recursive https://github.com/carlz32/.dotfiles ~/.dotfiles
