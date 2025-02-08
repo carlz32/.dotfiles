@@ -24,3 +24,4 @@ _darcs
 
 \.config/Code/User/keybindings.json
 \.config/Code/User/settings.json
+\.DS_Store
