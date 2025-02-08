@@ -8,8 +8,8 @@
     },
     "ui_font_size": 18,
     "ui_font_family": "SF Mono",
-    "buffer_font_size": 22,
-    "buffer_font_family": "FiraCode Nerd Font",
+    "buffer_font_size": 24,
+    "buffer_font_family": "FantasqueSansM Nerd Font",
     "confirm_quit": true,
     "format_on_save": "on",
     "autosave": "on_focus_change",
@@ -22,8 +22,8 @@
     "relative_line_numbers": true,
     "vertical_scroll_margin": 13,
     "terminal": {
-        "font_family": "FiraCode Nerd Font",
-        "font_size": 18
+        "font_family": "FantasqueSansM Nerd Font",
+        "font_size": 20
     },
     "vim": {
         "use_system_clipboard": "always",
