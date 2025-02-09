@@ -3,3 +3,5 @@
 .config/zed/conversations/*
 .config/zed/themes/*
 .DS_Store
+lazy-lock.json
+lazyvim.json
