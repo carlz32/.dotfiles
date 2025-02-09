@@ -10,7 +10,7 @@
 [credential]
 	useHttpPath = true
 [core]
-	editor = code --wait
+	editor = nvim
 [rerere]
 	enabled = true
 [column]
