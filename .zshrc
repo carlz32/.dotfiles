@@ -112,6 +112,28 @@ add-zsh-hook -Uz chpwd () {
 # Set up fzf key bindings and fuzzy completion
 FZF_ALT_C_COMMAND= source <(fzf --zsh)
 
+# Function to load environment variables from a .env file
+load_env() {
+  local env_file=".env"
+
+  # Check if .env file exists
+  if [ ! -f "$env_file" ]; then
+    echo ".env file not found!"
+    return 1
+  fi
+
+  # Read and export each line in the .env file
+  while IFS='=' read -r key value; do
+    # Ignore comments and empty lines
+    if [[ ! "$key" =~ ^# && -n "$key" ]]; then
+      # Remove any surrounding quotes from the value
+      value=$(echo $value | sed 's/^["'\'']//;s/["'\'']$//')
+      export "$key=$value"
+    fi
+  done < "$env_file"
+}
+
+load_env
 
 # zoxide
 eval "$(zoxide init --cmd cd zsh)"
