@@ -114,7 +114,7 @@ FZF_ALT_C_COMMAND= source <(fzf --zsh)
 
 # Function to load environment variables from a .env file
 load_env() {
-  local env_file=".env"
+  local env_file="$HOME/.env"
 
   # Check if .env file exists
   if [ ! -f "$env_file" ]; then
