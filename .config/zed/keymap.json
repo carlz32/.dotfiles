@@ -2,15 +2,14 @@
     {
         "context": "Editor && vim_mode == insert",
         "bindings": {
-            "j k": ["workspace::SendKeystrokes", "escape"],
-            "ctrl-h": "vim::DeleteLeft"
+            "j k": ["workspace::SendKeystrokes", "escape"]
         }
     },
     {
         "context": "Editor && vim_mode == normal && vim_operator == none && !VimWaiting",
         "bindings": {
-            "tab": "pane::ActivateNextItem",
-            "shift-tab": "pane::ActivatePrevItem"
+            "L": "pane::ActivateNextItem",
+            "H": "pane::ActivatePrevItem"
         }
     },
     {
@@ -22,25 +21,19 @@
     {
         "context": "ProjectPanel || CollabPanel || OutlinePanel || AssistantPanel || VimControl || EmptyPane || SharedScreen || MarkdownPreview || KeyContextView",
         "bindings": {
-            "ctrl-s h": ["workspace::ActivatePaneInDirection", "Left"],
-            "ctrl-s l": ["workspace::ActivatePaneInDirection", "Right"],
-            "ctrl-s k": ["workspace::ActivatePaneInDirection", "Up"],
-            "ctrl-s j": ["workspace::ActivatePaneInDirection", "Down"],
-            "ctrl-s v": "pane::SplitVertical",
-            "ctrl-s s": "pane::SplitHorizontal",
-            "ctrl-s right": ["vim::ResizePane", "Widen"],
-            "ctrl-s left": ["vim::ResizePane", "Narrow"],
-            "ctrl-s down": ["vim::ResizePane", "Shorten"],
-            "ctrl-s up": ["vim::ResizePane", "Lengthen"]
+            "ctrl-h": "workspace::ActivatePaneLeft",
+            "ctrl-l": "workspace::ActivatePaneRight",
+            "ctrl-k": "workspace::ActivatePaneUp",
+            "ctrl-j": "workspace::ActivatePaneDown"
         }
     },
     {
         "context": "Dock",
         "bindings": {
-            "ctrl-s h": ["workspace::ActivatePaneInDirection", "Left"],
-            "ctrl-s l": ["workspace::ActivatePaneInDirection", "Right"],
-            "ctrl-s k": ["workspace::ActivatePaneInDirection", "Up"],
-            "ctrl-s j": ["workspace::ActivatePaneInDirection", "Down"]
+            "ctrl-h": "workspace::ActivatePaneLeft",
+            "ctrl-l": "workspace::ActivatePaneRight",
+            "ctrl-k": "workspace::ActivatePaneUp",
+            "ctrl-j": "workspace::ActivatePaneDown"
         }
     }
 ]
