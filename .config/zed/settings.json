@@ -1,4 +1,8 @@
 {
+    "theme": "Vitesse Dark",
+    "features": {
+        "edit_prediction_provider": "zed"
+    },
     "assistant": {
         "default_model": {
             "provider": "deepseek",
