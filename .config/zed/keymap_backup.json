@@ -9,9 +9,7 @@
         "context": "Editor && vim_mode == normal && vim_operator == none && !VimWaiting",
         "bindings": {
             "L": "pane::ActivateNextItem",
-            "H": "pane::ActivatePreviousItem",
-            "space g g": "git_panel::ToggleFocus",
-            "space e": "project_panel::ToggleFocus"
+            "H": "pane::ActivatePrevItem"
         }
     },
     {

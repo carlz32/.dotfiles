@@ -14,6 +14,7 @@ export SUDO_EDITOR="nvim"
 # plugins
 plugins=(
 	git
+    fzf-tab
 	zsh-autosuggestions
 	zsh-syntax-highlighting
 	fzf
