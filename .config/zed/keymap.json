@@ -10,7 +10,7 @@
         "bindings": {
             "L": "pane::ActivateNextItem",
             "H": "pane::ActivatePreviousItem",
-            "space g g": "git_panel::ToggleFocus",
+            "space g": "git_panel::ToggleFocus",
             "space e": "project_panel::ToggleFocus"
         }
     },
