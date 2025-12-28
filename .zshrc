@@ -16,6 +16,7 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
+
 # plugins
 plugins=(
 	git
@@ -143,3 +144,9 @@ load_env
 
 # zoxide
 eval "$(zoxide init --cmd cd zsh)"
+
+# Added by Antigravity
+export PATH="/Users/carlz/.antigravity/antigravity/bin:$PATH"
+
+# Added by Antigravity
+export PATH="/Users/carlz/.antigravity/antigravity/bin:$PATH"
