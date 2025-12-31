@@ -17,6 +17,7 @@
   - nwg-bar
   - waybar
 - Zed
+- [hammerspoon](https://github.com/hammerspoon/hammerspoon)
 
 ## Steps
 

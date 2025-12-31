@@ -42,7 +42,7 @@ alias vi="nvim"
 alias psp="ps x | fzf"
 alias hp="history | fzf"
 alias phone="scrcpy --video-codec=h264 -m1080 --max-fps=120"
-
+alias anti="antigravity"
 
 # eza
 alias ll="eza --long --icons"
@@ -144,9 +144,6 @@ load_env
 
 # zoxide
 eval "$(zoxide init --cmd cd zsh)"
-
-# Added by Antigravity
-export PATH="/Users/carlz/.antigravity/antigravity/bin:$PATH"
 
 # Added by Antigravity
 export PATH="/Users/carlz/.antigravity/antigravity/bin:$PATH"
