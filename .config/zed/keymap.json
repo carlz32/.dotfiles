@@ -1,11 +1,5 @@
 [
     {
-        "context": "Editor && vim_mode == insert",
-        "bindings": {
-            "j k": ["workspace::SendKeystrokes", "escape"]
-        }
-    },
-    {
         "context": "Editor && vim_mode == normal && vim_operator == none && !VimWaiting",
         "bindings": {
             "L": "pane::ActivateNextItem",
