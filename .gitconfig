@@ -25,3 +25,5 @@
     recurseSubmodules = on-demand
 [gitbutler]
 	gitbutlerCommitter = 1
+[safe]
+	directory = *
