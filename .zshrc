@@ -43,6 +43,7 @@ alias psp="ps x | fzf"
 alias hp="history | fzf"
 alias phone="scrcpy --video-codec=h264 -m1080 --max-fps=120"
 alias anti="antigravity"
+alias hermes="ssh -N -L 8787:127.0.0.1:8787 -p 556 root@<SERVER_IP>"
 
 # eza
 alias ll="eza --long --icons"
@@ -147,3 +148,25 @@ eval "$(zoxide init --cmd cd zsh)"
 
 # Added by Antigravity
 export PATH="/Users/carlz/.antigravity/antigravity/bin:$PATH"
+
+# Mole shell completion
+if output="$(mole completion zsh 2>/dev/null)"; then eval "$output"; fi
+
+# Hermes Agent — ensure ~/.local/bin is on PATH
+export PATH="$HOME/.local/bin:$PATH"
+
+
+# >>> Hermes Studio CLI shim >>>
+case ":$PATH:" in
+  *":$HOME/bin:"*) ;;
+  *) export PATH="$HOME/bin:$PATH" ;;
+esac
+# <<< Hermes Studio CLI shim <<<
+
+# >>> otty shell integration >>>
+# Added by Otty — toggle in Settings > Shell > Shell Integration.
+# Inert unless launched by Otty (it sets $OTTY_SHELL_INTEGRATION).
+if [ -n "$OTTY_SHELL_INTEGRATION" ] && [ -r "$OTTY_SHELL_INTEGRATION/otty-integration.zsh" ]; then
+  . "$OTTY_SHELL_INTEGRATION/otty-integration.zsh"
+fi
+# <<< otty shell integration <<<
